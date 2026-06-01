@@ -23,7 +23,7 @@ html {
 body {
   margin: 0;
 
-  padding-top: 90px;
+  padding-top: 60px;
 
   background: #f5f5f5;
   color: #111111;
@@ -1818,6 +1818,27 @@ border: 1px solid #dddddd;
 
     flex-direction:column;
   }
+
+  .close{
+
+  top:5px;
+
+  right:5px;
+
+  font-size:40px;
+
+  z-index:10000;
+
+  width:40px;
+
+  height:40px;
+
+  line-height:40px;
+
+  text-align:center;
+
+  border-radius:50%;
+}
 
 .modal-content img{
 
