@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Activity Archive</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<nav class="menu">
+
+  <a href="index.html">TOP</a>
+  <a href="member.html">MEMBER</a>
+  <a href="works.html">WORKS</a>
+  <a href="activity.html">ACTIVITY</a>
+
+</nav>
+
+<section class="activity-archive">
+
+<h1>ACTIVITY</h1>
+
+<!-- ===================== -->
+
+<div class="log-card">
+<p class="date">2026.05.20</p>
+<p>「テスト」ソウ・ウシウシ生誕祭</p>
+<button
+  class="photo-btn"
+  data-image="images/log01.jpg">
+  写真を見る
+</button>
+</div>
+
+<div class="log-card">
+<p class="date">2026.05.29</p>
+<p>「テスト」ミーティング</p>
+</div>
+
+<div class="log-card">
+<p class="date">2026.05.06</p>
+ <p>「テスト」オーガ鰆。初競り過去最高額2980円(税込み)</p>
+<button
+  class="photo-btn"
+  data-image="images/log02.jpg">
+  写真を見る
+</button>
+</div>
+
+<div class="log-card">
+<p class="date">2026.05.06</p>
+ <p>「テスト」ハイブリッチ・ユズキが渡月橋の観光大使就任</p>
+<button
+  class="photo-btn"
+  data-image="images/log03.jpg">
+  写真を見る
+</button>
+</div>
+
+<div class="log-card">
+<p class="date">2026.05.06</p>
+ <p>「テスト」本ゼミ：なぜ潔癖症は乳酸菌やイースト菌は食べれるのか</p>
+</div>
+
+<div class="log-card">
+<p class="date">2026.05.06</p>
+ <p>「テスト」米利休が茶柱でCO²削減に成功</p>
+<button
+  class="photo-btn"
+  data-image="images/log04.jpg">
+  写真を見る
+</button>
+</div>
+
+<!-- ===================== -->
+
+<div class="pagination">
+
+  <button id="prevPage">
+    ← 前へ
+  </button>
+
+  <span id="pageInfo"></span>
+
+  <button id="nextPage">
+    次へ →
+  </button>
+
+</div>
+
+<div id="photoModal" class="photo-modal">
+
+  <span class="photo-close">&times;</span>
+
+  <img id="photoImage">
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
