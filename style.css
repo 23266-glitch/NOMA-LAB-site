@@ -1036,7 +1036,7 @@ border: 1px solid #dddddd;
 
 /* ロゴ */
 .logo{
-  width:650px;
+  width:400px;
   max-width:100%;
 }
 
@@ -1046,9 +1046,9 @@ border: 1px solid #dddddd;
   display:flex;
   flex-direction:column;
 
-  justify-content:space-between;
+  align-items:center;
 
-  padding:80px;
+  padding:40px 60px;
 
   background:white;
 }
@@ -1595,9 +1595,19 @@ border: 1px solid #dddddd;
 
 .qr{
 
-  margin-top:30px;
+  width:100%;
+
+  max-width:650px;
+
+  margin-top:40px;
+
+  padding:20px;
 
   text-align:center;
+
+  background:white;
+
+  border:1px solid #ddd;
 }
 
 .qr img{
