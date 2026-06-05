@@ -1645,6 +1645,14 @@ border: 1px solid #dddddd;
   color:inherit;
 }
 
+.work-item h3{
+  color:#8b0000 !important;
+}
+
+.work-item p{
+  color:#111111;
+}
+
 .menu{
   position:fixed !important;
   top:0 !important;
