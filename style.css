@@ -1634,6 +1634,16 @@ border: 1px solid #dddddd;
   font-size:13px;
 }
 
+.work-item{
+  display:block;
+  text-decoration:none;
+  color:inherit;
+}
+
+.work-item h3,
+.work-item p{
+  color:inherit;
+}
 
 .menu{
   position:fixed !important;
