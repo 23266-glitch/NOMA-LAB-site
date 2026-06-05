@@ -326,3 +326,31 @@ if(
     }
   };
 }
+
+let logoCount = 0;
+
+const logo = document.getElementById("secretLogo");
+
+if(logo){
+
+  logo.addEventListener("click", () => {
+
+    logoCount++;
+
+    if(logoCount >= 5){
+
+      const fade = document.getElementById("secretFade");
+
+      fade.classList.add("show");
+
+      setTimeout(() => {
+
+        window.location.href = "secret.html";
+
+      },3000);
+
+    }
+
+  });
+
+}
