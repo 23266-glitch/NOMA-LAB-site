@@ -245,3 +245,33 @@ if(logs.length){
     }
   };
 }
+
+
+
+let clickCount = 0;
+
+const logo = document.getElementById("secretLogo");
+
+if(logo){
+
+  logo.addEventListener("click", () => {
+
+    clickCount++;
+
+    if(clickCount === 5){
+
+      document
+        .getElementById("secretOverlay")
+        .classList.add("show");
+
+      setTimeout(() => {
+
+        window.location.href = "secret.html";
+
+      }, 5000);
+
+    }
+
+  });
+
+}
