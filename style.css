@@ -1753,6 +1753,159 @@ body{
 }
 
 /* ===================== */
+/* SECRET PAGE */
+/* ===================== */
+
+.secret-page{
+
+  background:#111111;
+
+  color:#eaeaea;
+}
+
+/* MENU */
+
+.secret-page .menu{
+
+  background:#1a1a1a !important;
+
+  border-bottom:2px solid #b00000;
+}
+
+.secret-page .menu a{
+
+  color:#eaeaea;
+  
+}
+
+.secret-page .menu a:hover{
+
+  color:#b00000;
+}
+
+/* TOP */
+
+.secret-page .left{
+
+  background:#1a1a1a;
+}
+
+.secret-page .left p{
+
+  color:#999999;
+}
+
+.secret-page .archive-title{
+
+  color:#b00000;
+
+  letter-spacing:8px;
+
+  font-size:14px;
+
+  margin-top:20px;
+
+  text-align:center;
+}
+
+/* WORKS */
+
+.secret-page .work-item{
+
+  background:#1a1a1a;
+
+  border:1px solid #333333;
+}
+
+.secret-page .work-text h3{
+
+  color:#eaeaea;
+}
+
+.secret-page .work-text p{
+
+  color:#999999;
+}
+
+.secret-page .works-group h2{
+
+  color:#b00000;
+
+  border-left:3px solid #b00000;
+}
+
+/* MEMBER */
+
+.secret-page .member-button{
+
+  background:#1a1a1a;
+
+  color:#eaeaea;
+
+  border:1px solid #333333;
+}
+
+.secret-page .member-button:hover{
+
+  color:#b00000;
+}
+
+.secret-page .member-category{
+
+  color:#b00000;
+
+  border-bottom:1px solid #333333;
+}
+
+/* ACTIVITY */
+
+.secret-page .log-card{
+
+  background:#1a1a1a;
+
+  border-left:3px solid #b00000;
+}
+
+.secret-page .log-text{
+
+  color:#eaeaea;
+}
+
+.secret-page .date{
+
+  color:#b00000;
+}
+
+/* ACCESS */
+
+.secret-page .access{
+
+  background:#1a1a1a;
+}
+
+.secret-page .access-info p{
+
+  color:#bbbbbb;
+}
+
+.secret-page .access h1{
+
+  color:#b00000;
+}
+
+/* タイトル共通 */
+
+.secret-page h1{
+
+  color:#b00000;
+}
+
+.secret-page h2{
+
+  color:#eaeaea;
+}
+
+/* ===================== */
 /* MOBILE */
 /* ===================== */
 
