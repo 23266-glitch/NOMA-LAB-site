@@ -258,7 +258,7 @@ if(logo){
 
     clickCount++;
 
-    if(clickCount === 5){
+    if(clickCount === 10){
 
       document
         .getElementById("secretOverlay")
