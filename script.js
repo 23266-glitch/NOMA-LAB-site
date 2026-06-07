@@ -275,3 +275,31 @@ if(logo){
   });
 
 }
+
+let archiveClickCount = 0;
+
+const archiveLogo = document.getElementById("archiveLogo");
+
+if(archiveLogo){
+
+  archiveLogo.addEventListener("click", () => {
+
+    archiveClickCount++;
+
+    if(archiveClickCount === 5){
+
+      document
+        .getElementById("archiveOverlay")
+        ?.classList.add("show");
+
+      setTimeout(() => {
+
+        window.location.href = "index.html";
+
+      }, 5000);
+
+    }
+
+  });
+
+}
