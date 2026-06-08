@@ -133,7 +133,7 @@ if(slides.length > 0){
 /* ACTIVITY PHOTO */
 /* ===================== */
 
-const photoBtns = document.querySelectorAll(".photo-btn");
+const photoBtns = document.querySelectorAll(".media-btn[data-image]");
 
 const photoModal = document.getElementById("photoModal");
 
@@ -303,3 +303,4 @@ if(archiveLogo){
   });
 
 }
+
