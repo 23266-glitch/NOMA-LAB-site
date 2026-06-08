@@ -2011,6 +2011,24 @@ body{
   margin:0;
 }
 
+.log-card{
+
+  display:block;
+
+  padding:20px;
+
+  border-left:3px solid #8b0000;
+
+  background:#1a1a1a;
+}
+
+.log-card p{
+
+  text-align:left;
+
+  margin:0 0 15px 0;
+}
+
 /* ===================== */
 /* MOBILE */
 /* ===================== */
@@ -2347,4 +2365,51 @@ body{
   h1{
     font-size:36px !important;
   }
+}
+
+/* ===================== */
+/* SMARTPHONE ACTIVITY */
+/* ===================== */
+
+@media screen and (max-width: 768px){
+
+  .log-card{
+
+    display:block !important;
+
+    text-align:left !important;
+  }
+
+  .log-card .date{
+
+    display:block;
+
+    text-align:left;
+
+    margin-bottom:15px;
+  }
+
+  .log-card p{
+
+    text-align:left;
+
+    margin-bottom:15px;
+  }
+
+  .log-card .media-btn,
+  .log-card .video-btn{
+
+    display:block;
+
+    width:100%;
+
+    box-sizing:border-box;
+
+    text-align:center;
+
+    margin-top:15px;
+
+    padding:14px 0;
+  }
+
 }
