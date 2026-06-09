@@ -133,7 +133,7 @@ if(slides.length > 0){
 /* ACTIVITY PHOTO */
 /* ===================== */
 
-const photoBtns = document.querySelectorAll(".media-btn[data-image]");
+const photoBtns = document.querySelectorAll(".media-btn");
 
 const photoModal = document.getElementById("photoModal");
 
@@ -304,3 +304,102 @@ if(archiveLogo){
 
 }
 
+/* ===================== */
+/* NEWS PAGINATION */
+/* ===================== */
+
+const newsCards = document.querySelectorAll(".news-card");
+
+if(newsCards.length){
+
+  const perPage = 5;
+
+  let currentNewsPage = 1;
+
+  const totalNewsPages =
+    Math.ceil(newsCards.length / perPage);
+
+  function showNewsPage(page){
+
+    newsCards.forEach((card,index)=>{
+
+      const start = (page - 1) * perPage;
+
+      const end = start + perPage;
+
+      if(index >= start && index < end){
+
+        card.style.display = "grid";
+
+      }else{
+
+        card.style.display = "none";
+      }
+
+    });
+
+    const pageInfo =
+      document.getElementById("newsPageInfo");
+
+    if(pageInfo){
+
+      pageInfo.textContent =
+        page + " / " + totalNewsPages;
+    }
+
+    const prevBtn =
+      document.getElementById("prevNews");
+
+    const nextBtn =
+      document.getElementById("nextNews");
+
+    if(prevBtn){
+      prevBtn.disabled = page === 1;
+    }
+
+    if(nextBtn){
+      nextBtn.disabled = page === totalNewsPages;
+    }
+  }
+
+  showNewsPage(currentNewsPage);
+
+  document.getElementById("nextNews")?.addEventListener("click",()=>{
+
+    if(currentNewsPage < totalNewsPages){
+
+      currentNewsPage++;
+
+      showNewsPage(currentNewsPage);
+    }
+
+  });
+
+  document.getElementById("prevNews")?.addEventListener("click",()=>{
+
+    if(currentNewsPage > 1){
+
+      currentNewsPage--;
+
+      showNewsPage(currentNewsPage);
+    }
+
+  });
+
+}
+
+document.querySelectorAll(".photo-btn").forEach(btn => {
+
+  btn.addEventListener("click", () => {
+
+    const modal = document.getElementById("photoModal");
+
+    const img = document.getElementById("photoImage");
+
+    img.src = btn.dataset.image;
+
+    modal.classList.add("show");
+
+  });
+
+});

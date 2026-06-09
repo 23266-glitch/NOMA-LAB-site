@@ -1982,26 +1982,32 @@ body{
 
   border:none;
 
-  padding:10px 22px;
+  border-radius:999px;
 
-  border-radius:30px;
-
-  cursor:pointer;
+  padding:14px 32px;
 
   font-size:14px;
 
-  font-weight:bold;
+  font-weight:600;
 
-  transition:0.3s;
+  letter-spacing:1px;
 
   text-decoration:none;
+
+  cursor:pointer;
+
+  transition:all .3s ease;
+
+  box-shadow:0 4px 12px rgba(139,0,0,.25);
 }
 
 .media-btn:hover{
 
-  background:#b30000;
+  background:#a30000;
 
   transform:translateY(-2px);
+
+  box-shadow:0 8px 18px rgba(139,0,0,.35);
 }
 
 .log-card .media-btn{
@@ -2028,6 +2034,41 @@ body{
 
   margin:0 0 15px 0;
 }
+
+body:not(.secret-page) .log-card{
+
+  background:white;
+
+  color:#111111;
+
+  border-left:3px solid #8b0000;
+}
+
+.media-btn{
+
+  background:#8b0000 !important;
+
+  color:white !important;
+
+  border:none !important;
+
+  border-radius:999px !important;
+
+  padding:14px 32px !important;
+
+  font-weight:600 !important;
+
+  text-decoration:none !important;
+
+  box-shadow:0 4px 12px rgba(139,0,0,.25) !important;
+}
+
+.media-btn:hover{
+
+  background:#a30000 !important;
+}
+
+
 
 /* ===================== */
 /* MOBILE */
@@ -2375,9 +2416,7 @@ body{
 
   .log-card{
 
-    display:block !important;
-
-    text-align:left !important;
+    text-align:left ;
   }
 
   .log-card .date{
@@ -2410,6 +2449,97 @@ body{
     margin-top:15px;
 
     padding:14px 0;
+  }
+
+}
+
+@media screen and (max-width:768px){
+
+  .log-card{
+
+    text-align:left !important;
+  }
+
+  .log-card .date{
+
+    text-align:left !important;
+  }
+
+  .log-card p{
+
+    text-align:left !important;
+  }
+
+  .log-card .media-btn,
+  .log-card .video-btn{
+
+    display:block;
+
+    width:90%;
+
+    margin:15px auto 0;
+
+    text-align:center;
+  }
+
+}
+
+@media screen and (max-width:768px){
+
+  .media-center{
+
+    width:100%;
+  }
+
+  .media-center .media-btn{
+
+    display:block;
+
+    width:100%;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+    padding:14px 0;
+  }
+
+}
+
+@media screen and (max-width:768px){
+
+  .log-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start !important;
+
+  }
+
+  .log-card .date{
+
+    width:100%;
+
+    text-align:left !important;
+  }
+
+  .log-card p{
+
+    width:100%;
+
+    text-align:left !important;
+
+    margin:0 0 12px 0;
+  }
+
+  .log-card .media-btn,
+  .log-card .video-btn{
+
+    width:100%;
+
+    margin-top:10px;
   }
 
 }
