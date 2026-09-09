@@ -1,4 +1,5 @@
 const modal = document.getElementById("memberModal");
+const modalAudio = document.getElementById("modalAudio");
 
 const modalImage = document.getElementById("modalImage");
 const modalName = document.getElementById("modalName");
@@ -30,6 +31,11 @@ buttons.forEach((button) => {
     modalName.textContent = button.dataset.name;
 
     modalComment.textContent = button.dataset.comment;
+
+    if(button.dataset.song){
+      modalAudio.src = button.dataset.song;
+      modalAudio.play();
+    }
 
     /* 出身 */
     if(button.dataset.from){
@@ -81,6 +87,9 @@ if(closeBtn){
 
     modal.classList.remove("show");
 
+    modalAudio.pause();
+    modalAudio.currentTime = 0;
+
   });
 
 }
@@ -96,6 +105,9 @@ if(modal){
     if (e.target === modal) {
 
       modal.classList.remove("show");
+
+      modalAudio.pause();
+      modalAudio.currentTime = 0;
 
     }
 
@@ -146,6 +158,9 @@ const photoClose = document.querySelector(".photo-close");
 photoBtns.forEach((btn) => {
 
   btn.addEventListener("click", () => {
+
+     // data-image を持たないボタン（=動画用リンク）は無視する
+    if (!btn.dataset.image) return;
 
     photoModal.classList.add("show");
 
@@ -387,19 +402,3 @@ if(newsCards.length){
   });
 
 }
-
-document.querySelectorAll(".photo-btn").forEach(btn => {
-
-  btn.addEventListener("click", () => {
-
-    const modal = document.getElementById("photoModal");
-
-    const img = document.getElementById("photoImage");
-
-    img.src = btn.dataset.image;
-
-    modal.classList.add("show");
-
-  });
-
-});
