@@ -1622,6 +1622,12 @@ body{
   border:1px solid #333333;
 }
 
+.secret-page .work-item img{
+  height:auto;
+  aspect-ratio: 210 / 297;
+  object-fit: cover;
+}
+
 .secret-page .work-text h3{
 
   color:#eaeaea;
