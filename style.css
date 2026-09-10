@@ -2344,14 +2344,8 @@ body{
   line-height: 2;
 }
 
-.guide-schedule {
-  min-width: 0;
-}
-
 .guide-schedule img {
   width: 100%;
-  height: auto;
-  display: block;
   border: 1px solid #dddddd;
 }
 
@@ -2366,19 +2360,4 @@ body{
   text-decoration: none;
   color: inherit;
   display: block;
-}
-
-.guide-schedule {
-  min-width: 0;
-}
-
-.guide-contact {
-  min-width: 0;
-}
-
-.guide-schedule img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border: 1px solid #dddddd;
 }
