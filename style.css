@@ -2364,3 +2364,38 @@ body{
   color:#8b0000;
   font-size:11px;
 }
+
+.youtube{
+  margin-top:20px;
+  padding:20px;
+  text-align:center;
+}
+
+.youtube img{
+  width:160px;
+  border-radius:50%;
+  border:3px solid #8b0000;
+  display:block;
+  margin:auto;
+}
+
+.youtube span{
+  display:block;
+  margin-top:10px;
+  color:#8b0000;
+  letter-spacing:2px;
+  font-size:16px;
+}
+
+.youtube .youtube-note{
+  display:block;
+  margin-top:4px;
+  color:#8b0000;
+  font-size:11px;
+}
+
+.youtube a{
+  text-decoration:none;
+  color:inherit;
+  display:block;
+}
