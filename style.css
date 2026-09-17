@@ -394,7 +394,7 @@ border: 1px solid #dddddd;
   height: auto;
   aspect-ratio: 297 / 210;
   object-fit: contain;
-  background: white;
+  background: rgb(199, 199, 199);
   display: block;
 
   filter: grayscale(20%) contrast(1.05);
@@ -2400,4 +2400,8 @@ body{
   text-decoration:none;
   color:inherit;
   display:block;
+}
+
+.work-text h3 .work-subtitle{
+  font-size: 0.7em;
 }
